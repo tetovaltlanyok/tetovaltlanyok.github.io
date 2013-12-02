@@ -2,6 +2,11 @@
     "name": "tetovaltlanyok",
     "version": "0.0.1",
     "dependencies": {
-        "underscore": "*"
+        "underscore": "*",
+        "uglify-js": "*",
+        "cssmin": "*",
+        "grunt": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-cssmin": "*"
     }
 }
