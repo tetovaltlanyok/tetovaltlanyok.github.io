@@ -46,26 +46,26 @@
         <div class="lioseparator"></div>
 
         <div id="jeglio" class="isotope">
-            
+            <% _.each( models, function( listItem ){ %>
             <div class="item isotope-item" style="display: block;">
-                <a href="http://www.facebook.com/media/set/?set=a.583521078384644.1073741927.424971077572979&type=3">
+                <a href="http://www.facebook.com/media/set/?set=<%= listItem.url %>&type=3">
                     <div class="shadow"></div>
                 </a>
 
-                <a href="http://www.facebook.com/media/set/?set=a.583521078384644.1073741927.424971077572979&type=3" target="_blank">
+                <a href="http://www.facebook.com/media/set/?set=<%= listItem.url %>&type=3" target="_blank">
                     <div class="item-wrapper">
                         <figure>
-                            <img src="http://sphotos-a.ak.fbcdn.net/hphotos-ak-prn1/p206x206/1441396_583521088384643_1960875409_n.jpg">
+                            <img src="http://sphotos-a.ak.fbcdn.net/hphotos-ak-prn1/p206x206/<%= listItem.image %>.jpg">
                         </figure>
                         <div class="bottom-holder">
                             <div class="desc-holder" style="bottom: 0px;">
-                                <h3>Zoe McGarry</h3>
+                                <h3><%= listItem.name %></h3>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            
+            <% }); %>
         </div>
 
         <div class="lio-loader" style="display: none;"></div>
