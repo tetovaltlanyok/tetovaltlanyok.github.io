@@ -11,7 +11,7 @@ html {
 
 body {
 	background-color: #FAFAFA;
-	background-image: url("../index_files/img/bodypattern.png");
+	background-image: url("./img/bodypattern.png");
 	overflow-x : hidden;
 	height: 100%:
 }
@@ -72,7 +72,7 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
 
 [class^="icon-"],
 [class*=" icon-"] {
-	background-image: url("../index_files/img/glyphicons-halflings.png");
+	background-image: url("./img/glyphicons-halflings.png");
 }
 
 .icon-white {
@@ -363,7 +363,7 @@ button i {
 
 /* II . HEADER & NAV  ========================================================================== */
 header {
-	background-image: url("../index_files/img/bg-header-pattern.png");
+	background-image: url("./img/bg-header-pattern.png");
 	background-color: transparent;
 	background-position: 0px -51px;
 	background-repeat: repeat-x;
@@ -463,14 +463,14 @@ header nav .navright .navright-wrapper {
 
 header nav .navleft .menu > li {
 	background-position: 0px 0px;
-	background-image: url("../index_files/img/newseparator.png");
+	background-image: url("./img/newseparator.png");
 	background-repeat: no-repeat;
 	float: right;
 }
 
 header nav .navright .menu > li {
 	background-position: 100% 0px;
-	background-image: url("../index_files/img/newseparator.png");
+	background-image: url("./img/newseparator.png");
 	background-repeat: no-repeat;
 	float: left;
 }
@@ -608,7 +608,7 @@ header nav .haschild>a>div {
 }
 
 header nav .haschild:hover>a>div {
-	background-image: url("../index_files/img/glyphicons-halflings.png");
+	background-image: url("./img/glyphicons-halflings.png");
 }
 
 /****** Drop Down & Nav End ******/
@@ -616,7 +616,7 @@ header nav .haschild:hover>a>div {
 [class ^="misc-"],[class *=" misc-"] {
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: url("../index_files/img/misc-icon.png");
+	background-image: url("./img/misc-icon.png");
 	width: 29px;
 	height: 29px;
 	display: block;
@@ -742,7 +742,7 @@ header nav .haschild:hover>a>div {
 [class ^="social-"],[class *=" social-"] {
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: url("../index_files/img/socialset.png");
+	background-image: url("./img/socialset.png");
 	width: 29px;
 	height: 29px;
 	display: block;
@@ -889,7 +889,7 @@ header nav .haschild:hover>a>div {
 	background: white;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-image: url("../index_files/img/loader-small.gif"); /* loader 1*/
+	background-image: url("./img/loader-small.gif"); /* loader 1*/
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
@@ -1175,7 +1175,7 @@ header nav .haschild:hover>a>div {
 }
 
 .curtain-loader {
-	background-image: url("../index_files/img/big-loader.gif");
+	background-image: url("./img/big-loader.gif");
 	background-repeat: no-repeat;
 	background-color: white;
 	background-position: 10px 10px;
@@ -1406,7 +1406,7 @@ header nav .haschild:hover>a>div {
 
 .lio-loader {
 	display: none;
-	background: url("../index_files/img/big-loader.gif");
+	background: url("./img/big-loader.gif");
 	background-color: white;
 	background-repeat: no-repeat;
 	background-position: 10px 10px;
@@ -1465,7 +1465,7 @@ header nav .haschild:hover>a>div {
 }
 
 #jeglio .item .small-loader {
-	background-image: url("../index_files/img/loader-small.gif");
+	background-image: url("./img/loader-small.gif");
 	width: 32px;
 	height: 32px;
 	position: absolute;
@@ -1820,7 +1820,7 @@ h2.project-title {
 	position: relative;
 	max-width: 700px;
 	max-height: 500px;
-	background-image: url("../index_files/img/big-loader.gif") no-repeat 50% 50%;
+	background-image: url("./img/big-loader.gif") no-repeat 50% 50%;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -3016,7 +3016,7 @@ table#wp-calendar td:hover,table#wp-calendar td a:hover {
 /* IX. FOOTER ========================================================================== */
 footer {
 	width: 100%;
-	background-image: url("../index_files/img/bg-footer-pattern.png");
+	background-image: url("./img/bg-footer-pattern.png");
 	bottom: 0;
 	color: #FFFFFF;
 	height: 35px;
