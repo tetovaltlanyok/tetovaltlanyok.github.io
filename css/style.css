@@ -1542,10 +1542,10 @@ header nav .haschild:hover>a>div {
 
 #jeglio .item .item-wrapper .desc-holder h3 {
 	color: #464646;
-	font-size: 80%;
 	font-weight: normal;
 	margin: 0;
 	padding: 14px 5px 0;
+    font-size: 20px;
 }
 
 #jeglio .item .item-wrapper .desc-holder h4,#jeglio .item .item-wrapper .desc-holder h4 a,#jeglio .item .item-wrapper .desc-holder h4 a:visited
