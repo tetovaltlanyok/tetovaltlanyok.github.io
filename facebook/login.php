@@ -1,6 +1,6 @@
 <?php
-require_once('vendor/autoload.php');
-$config = require('config.php');
+require_once('../vendor/autoload.php');
+$config = require('../config.php');
 $facebook = new Facebook($config);
 $user_id = $facebook->getUser();
 ?>
