@@ -4,6 +4,9 @@ use \Doctrine\DBAL\Configuration;
 use \Doctrine\DBAL\DriverManager;
 use \Doctrine\DBAL\Connection;
 
+use Doctrine\ORM\Tools\Setup;
+use Doctrine\ORM\EntityManager;
+
 class SiteController extends Controller
 {
 	/**
@@ -53,6 +56,9 @@ class SiteController extends Controller
             array(Connection::PARAM_INT_ARRAY)
         );
 
+        $schema = new \Doctrine\DBAL\Schema\Schema();
+
+
         var_dump($stmt->fetchAll());
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
@@ -78,6 +84,43 @@ class SiteController extends Controller
 	 */
 	public function actionContact()
 	{
+        $paths = array(__DIR__ ."/../doctrine_models");
+        $isDevMode = true;
+
+        $dbParams = array(
+            'dbname' => 'facebookgallery',
+            'user' => 'facebookgallery',
+            'password' => 'facebookgallery',
+            'host' => 'localhost',
+            'driver' => 'pdo_mysql',
+        );
+
+        $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode);
+        $entityManager = EntityManager::create($dbParams, $config);
+
+//        $product = new Product();
+//        $product->name = 'Amidala';
+//
+//        $entityManager->persist($product);
+//        $entityManager->flush();
+
+//        $repository = $entityManager->getRepository('Product');
+//        $products = $repository->findAll();
+
+        $product = $entityManager->find('Product', 1);
+
+        if ($product === null) {
+            echo "Product 1 does not exist.\n";
+            exit(1);
+        }
+
+
+        $product->name = 'New name';
+
+        $entityManager->flush();
+
+        var_dump($product);
+
 		$model=new ContactForm;
 		if(isset($_POST['ContactForm']))
 		{
