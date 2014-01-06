@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+div.capty-caption {
+	background-color: #000;
+	color: #FFF;
+	font: bold 13px verdana;
+	padding-left: 10px;
+	padding-top: 7px;
+	text-shadow: 1px 1px 0 #222;
+	text-align: center;
+}
+
+div.capty-caption a {
+	color: #318DAD;
+	font: bold 13px verdana;
+	text-decoration: none;
+	text-shadow: none;
+}
