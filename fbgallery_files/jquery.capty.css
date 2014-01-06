@@ -1,6 +1,4 @@
-@CHARSET "UTF-8";
-
-div.capty-caption {
+.capty-caption {
 	background-color: #000;
 	color: #FFF;
 	font: bold 13px verdana;
@@ -10,7 +8,7 @@ div.capty-caption {
 	text-align: center;
 }
 
-div.capty-caption a {
+.capty-caption a {
 	color: #318DAD;
 	font: bold 13px verdana;
 	text-decoration: none;

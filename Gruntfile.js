@@ -36,8 +36,9 @@ module.exports = function(grunt) {
 
                     'fbgallery_files/minified.css': [
                         'fbgallery_files/bootstrap.css',
-                        'fbgallery_files/masonry.css',
-                        'fbgallery_files/jquery.capty.css'
+                        'fbgallery_files/jquery.capty.css',
+                        'fbgallery_files/masonry.css'
+
                     ]
                 }
             }
